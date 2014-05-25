@@ -1,0 +1,45 @@
+<ion-view title="Photo">
+  <ion-content class="has-header">
+    
+	  <div class="list card">
+
+	  	<div class="item item-body">
+	  		<img class="full-image" src="{{photo.fullPath}}">
+	  		<p>
+	  			{{photo.caption}}
+	  		</p>
+	  		<p>
+	  			<i class="icon ion-location"></i>
+	  			{{photo.address}}
+	  			{{photo.lat_lng}}
+	  		</p>
+	  	</div>
+
+
+
+	  	<!-- <div class="item tabs tabs-secondary tabs-icon-left">
+	  		<a class="tab-item" onclick="window.plugins.socialsharing.shareViaTwitter(photo.caption, null, photo.fullPath)"
+	  		>
+	  			<i class="icon ion-social-twitter"></i>
+	  		</a>
+	  		<a class="tab-item" onclick="window.plugins.socialsharing.shareViaFacebook(photo.caption, null, photo.fullPath)"
+	  			>
+	  			<i class="icon ion-social-facebook"></i>
+	  			
+	  		</a>
+
+	  		<a class="tab-item" onclick="window.plugins.socialsharing.shareViaWhatsApp('Please take a look at this photo', null, null, function() {console.log('share ok')}, function(errormsg){alert(errormsg)});">
+	  			<i class="icon ion-share"></i>
+	  			By Whatsup
+	  		</a>
+
+	  		<a class="tab-item" onclick="Instagram.share(encodeImageUri('http://yayasser.eu1.frbit.net/photos/test.jpg'), function (err) { if (err) { alert("not shared"); } else {alert("shared"); }});">
+	  			<i class="icon ion-share"></i>
+	  			By Instagram
+	  		</a>
+	  	</div> -->
+
+	  </div>
+
+  </ion-content>
+</ion-view>
